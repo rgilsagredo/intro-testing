@@ -3,8 +3,9 @@ package daw.programacion.calculadora;
 /*
  * Necesitaremos los siguientes imports del paquete JUNIT
  */
-import static org.junit.Assert.*;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 public class CalculadoraTest {
 
@@ -52,7 +53,7 @@ public class CalculadoraTest {
         Calculadora calc = new Calculadora();
         int expected = 7;
         int numero1 = 3, numero2 = 4;
-        assertTrue("debería ser 3 + 4 = 7", calc.suma(numero1, numero2) == expected);
+        assertTrue( calc.suma(numero1, numero2) == expected, "debería ser 3 + 4 = 7");
       }
 
       /**
